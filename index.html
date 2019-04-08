@@ -2,11 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title of the document</title>
+<title>LOGIN</title>
 </head>
 
 <body>
-Content of the document......
+	<form>
+		<p>USUARIO: </p>
+		<input type="text" id="usuario" placeholder="Ingresa tu usuario"/>
+		<p>CONTRASEÑA: </p>
+		<input type="password" id="contraseña" placeholder="Ingresa tu contraseña"/>
+		<p></p>
+		<input type="button" value="Ingresar" id="click" onclick="Coincidencia()">
+		<script>
+		function Coincidencia(){
+			var user=document.getElementById("usuario");
+			var password=document.getElementById("contraseña");
+			var u1=user.value;
+			var p1=password.value;
+			if(u1==p1){
+				alert('LOGIN CORRECTO');
+			}
+		}
+		</script>
+	</form>
 </body>
 
 </html>
